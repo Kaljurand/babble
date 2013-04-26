@@ -9,6 +9,7 @@ Components of a typical practice session:
 
   - tap on the big yellow button and read out loud the displayed text (in the correct language)
   - tap on the text to try again
+  - tap on the language label (under the phrase) to send the phrase to Google Translate
   - tap on "Phrases" to see the history of phrases, sortable by various parameters
   - tap on a phrase to listen to its correct pronunciation
   - tap on "Plot" to see the graph of your error levels in different languages

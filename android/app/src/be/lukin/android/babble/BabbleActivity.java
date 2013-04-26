@@ -94,6 +94,15 @@ public class BabbleActivity extends AbstractRecognizerActivity {
 		mTvResult.setText("");
 		mTvFeedback.setVisibility(View.INVISIBLE);
 
+		mTvLang.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				if (mCurrentSentence != null) {
+					startActivity(createTranslateIntent(mCurrentSentence.getLocale(),
+							Locale.getDefault().getLanguage(), mCurrentSentence.getValue()));
+				}
+			}
+		});
+
 		new DownloadSentencesTask().execute();
 	}
 
@@ -196,6 +205,12 @@ public class BabbleActivity extends AbstractRecognizerActivity {
 			intent.putExtra(RecognizerIntent.EXTRA_MAX_RESULTS, 1);
 		}
 		return intent;
+	}
+
+
+	private Intent createTranslateIntent(String sl, String tl, String phrase) {
+		return new Intent(Intent.ACTION_VIEW,
+				Uri.parse("http://translate.google.com/m/translate?sl=" + Uri.encode(sl) + "&tl=" + Uri.encode(tl) + "&q=" + Uri.encode(phrase)));
 	}
 
 
