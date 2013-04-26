@@ -3,6 +3,6 @@
 
     <bool name="defaultMaxOneResult">true</bool>
     <bool name="defaultDemoMode">true</bool>
-    <bool name="defaultAudioCues">true</bool>
+    <bool name="defaultAudioCues">false</bool>
 
 </resources>
