@@ -44,6 +44,7 @@
         android:padding="8dp"
         android:text="@string/examplePhrase"
         android:textColor="@color/android_green"
+        android:textIsSelectable="true"
         android:textSize="@dimen/textSizeMainFeedback" />
 
     <LinearLayout
