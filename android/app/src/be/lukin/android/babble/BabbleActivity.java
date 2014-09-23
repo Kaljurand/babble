@@ -201,6 +201,9 @@ public class BabbleActivity extends AbstractRecognizerActivity {
 		// We let the recognizer know what the user was instructed to say.
 		intent.putExtra(RecognizerIntent.EXTRA_PROMPT, phrase);
 		intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, lang);
+		// The recognizer should not attempt to recognize additional languages.
+		// This is specific to certain versions of Google Search (which are maybe simply buggy?).
+		intent.putExtra("android.speech.extra.EXTRA_ADDITIONAL_LANGUAGES", new String[]{});
 		if (mPrefs.getBoolean(getString(R.string.keyMaxOneResult), mRes.getBoolean(R.bool.defaultMaxOneResult))) { 
 			intent.putExtra(RecognizerIntent.EXTRA_MAX_RESULTS, 1);
 		}
