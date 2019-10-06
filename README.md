@@ -1,6 +1,11 @@
 Babble
 ======
 
+Update (2019-10-06): Google has removed Babble from Google Play due to an alleged trademark infringement. I don't have time to investigate this. The only way to obtain the Babble app now is to download the apk from https://github.com/Kaljurand/babble/releases. However, there is an app called Babblemore now available on Google Play: <https://play.google.com/store/apps/details?id=com.appspot.k6nele.android.babblemore>. It is was developed in early 2013 as an extension of Babble but this work was never finished, and never published neither as source code nor on Google Play. Its main improvement over Babble is the inclusion of a larger and more multilingual set of phrases (based on the MOLTO Phrasebook:
+https://github.com/GrammaticalFramework/gf-contrib/tree/master/phrasebook). It is available now on Google Play to offer a simpler way to install a Babble-like app and show the possible extensions to the original idea behind Babble. Note that Babblemore can contain various bugs due to its unfinished nature.
+
+---
+
 Babble is an Android app that shows you short phrases/sentences in many different languages and you'll have to
 pronounce them quickly (in 4 seconds) and correctly. Babble will give you feedback in the form of
 an edit distance between the transcription of your pronunciation and the original phrase.
